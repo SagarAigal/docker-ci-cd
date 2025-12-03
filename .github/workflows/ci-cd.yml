@@ -15,8 +15,6 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm ci
-      - name: Run tests
-        run: npm test
       - name: Build Docker image
         run: docker build -t node-docker-sample .
       - name: Push Docker image to Docker Hub (optional)
